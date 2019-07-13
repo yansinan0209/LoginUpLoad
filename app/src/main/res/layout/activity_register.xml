@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo_hdpi"/>
+
+    <RelativeLayout
+        android:id="@+id/r1_name"
+        style="@style/loginlayout"
+        android:layout_marginTop="160dp">
+
+        <ImageView
+            android:id="@+id/iv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/login_icon_n_hdpi"/>
+        <EditText
+            android:id="@+id/register_name"
+            style="@style/loginEd"
+            android:layout_toRightOf="@id/iv_name"
+            android:hint="请输入昵称"/>
+        <View
+            style="@style/loginLine"
+            android:layout_below="@id/iv_name"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1_phone"
+        style="@style/loginlayout"
+        android:layout_below="@id/r1_name"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/iv_iphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/login_icon_phone_n_hdpi"/>
+        <EditText
+            android:id="@+id/register_phone"
+            style="@style/loginEd"
+            android:layout_toRightOf="@id/iv_iphone"
+            android:hint="请输入手机号"/>
+        <View
+            style="@style/loginLine"
+            android:layout_below="@id/iv_iphone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1_pwd"
+        style="@style/loginlayout"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/r1_phone">
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/login_icon_lock_n_hdpi"/>
+        <EditText
+            android:id="@+id/register_password"
+            style="@style/loginEd"
+            android:layout_toLeftOf="@id/eye_password"
+            android:layout_toRightOf="@id/iv_password"
+            android:hint="请输入登录密码"
+            android:inputType="numberPassword"/>
+        <ImageView
+            android:id="@+id/eye_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/login_icon_eye_n_hdpi"/>
+        <View
+            style="@style/loginLine"
+            android:layout_below="@id/iv_password"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/regar_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r1_pwd"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="短信验证注册"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btn_rigister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="#00aaff"/>
+
+</RelativeLayout>
